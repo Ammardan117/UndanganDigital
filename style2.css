@@ -1,0 +1,418 @@
+* {
+    padding: 0;margin: 0;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-image: url(foto/background.jpeg);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.awal{
+    padding:80px 0;
+    height: 100%;
+    width: 100%;
+}
+
+.pengantin{
+    font-size: 60px;
+    color: #f7d6a2;
+}
+
+.foto{
+    width: 350px;
+    height: 450px;
+    margin-top: 30px;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 70px;
+}
+
+.card {
+    background-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: #f7d6a2;
+    width: 200px;
+    border: 2px solid #8b4513;
+}
+
+.image-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 350px;
+}
+
+.text-container {
+    margin-top: 20px;
+}
+
+.text-container h2 {
+    font-size: 30px;
+}
+
+.text-container p {
+    font-size:25px;
+}
+.awal .pengantin h1 {
+    margin-bottom: 30px;
+}
+
+.ayat{
+    font-size: 30px;
+    color: #f7d6a2;
+    background-color: black;
+    border: 3px solid #8b4513;
+    padding: 20px;
+    width: 75%;
+    margin-top: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+p{
+    margin-top: 5px;
+}
+
+h3{
+    font-family: popins;
+    font-size: 20px;
+}
+
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+margin-top: 60px;
+}
+
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 20px;
+margin-top: -22px;
+color: #8b4513;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+}
+
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+
+.numbertext {
+color: #f7d6a2;
+font-size: 12px;
+padding: 8px 12px;
+top: 0;
+}
+
+
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #8b4513;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #f7d6a2;
+}
+
+
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+img{
+width: 400px;
+height: 500px;
+border-radius: 15px;
+border: 2px solid #8b4513;
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes ammar {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animasi{
+    animation: ammar 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.event{
+gap: 20px;
+padding: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.acara {
+background-color: black;
+padding: 40px;
+border-radius: 15px;
+text-align: center;
+width: 300px;
+margin-top: 30px;
+border: 2px solid #8b4513;
+}
+
+h1 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.description {
+font-size: 16px;
+line-height: 1.5;
+margin-bottom: 30px;
+}
+
+.info {
+display: flex;
+justify-content: space-between;
+}
+
+.info h3 {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.location, .time {
+width: 45%;
+}
+
+.location p, .time p {
+font-size: 14px;
+line-height: 1.4;
+}
+
+
+.pasangan{
+font-size: 70px;
+}
+
+.countdown{
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+flex-direction: row;
+}
+
+.countdown-item{
+font-size: 18px;
+font-family: sans-serif;
+margin: 10px;
+margin-top: 40px;
+background-color: black;
+border: #8b4513 2px solid;
+padding: 20px;
+border-radius: 12px;
+width: 15vw;
+height: 50px;
+}
+
+#akadHours,#akadDays,#akadMinutes,#akadSeconds{
+font-family: sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.form-container{
+background-color: black;
+color: #f7d6a2;
+margin: 20px;
+padding : 20px;
+border: 3px solid #8b4513;
+border-radius: 12px;
+width: 400px;
+}
+
+.rs{
+display: flex;
+justify-content: center;
+}
+
+.form-container h2 {
+margin-bottom: 20px;
+font-size: 45px;
+font-family:serif;
+}
+
+.form-container label {
+display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="number"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #8b4513;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #8b4513;
+    color: #f7d6a2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #855736;
+}
+
+#rsvp-form{
+    font-size: 30px;
+    text-align: left;
+    font-family: serif;
+}
+
+label{
+    font-size: 30px;
+    text-align: left;
+    font-family: serif; 
+}
+
+.kirim{
+    font-family: sans-serif;
+}
+
+input{
+    font-family: serif;
+    font-size: 20px;
+}
+
+.aps{
+    display: flex;
+    justify-content: center;
+}
+
+.maps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+    border: 3px solid #8b4513;
+    border-radius: 12px;
+    width: auto;
+}
+
+.maps iframe{
+    border-radius: 12px;
+}
+
+.penutup{
+    margin-top: 100px;
+}
+
+.pbt{
+    font-size: 20px;
+    margin: 20px;
+}
+
+@media( max-width: 700px){
+    .event{
+        flex-direction:column;
+    }
+
+    .container{
+        flex-direction:column;
+
+    }
+    
+    .maps {
+        width: 300px;
+        height: 450px;
+    }
+    
+    .maps iframe {
+        width: 300px;
+        height: 450px;
+    }
+
+    .countdown-item {
+        font-size: 15px;
+    }
+
+}

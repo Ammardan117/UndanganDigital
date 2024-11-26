@@ -1,0 +1,58 @@
+* {
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body, html {
+height: 100%;
+font-family: 'Arial', sans-serif;
+}
+
+.invitation-container {
+background-image: url(foto/background2.jpeg);
+background-size: cover;
+background-position: center;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;  
+}
+
+.coklat{
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.invitation-content {
+text-align: center;
+color: #f7d6a2;
+font-size: 2rem;
+}
+
+h1 {
+margin-bottom: 20px;
+}
+
+.open-invitation {
+padding: 10px 20px;
+font-size: 1rem;
+color: #b8955c;
+background-color: #fdfbf6;
+border: 2px solid #5a4b48;
+border-radius: 5px;
+cursor: pointer;
+font-family: 'Georgia', serif;
+}
+
+.open-invitation:hover {
+background-color: #eae0d5;
+}
